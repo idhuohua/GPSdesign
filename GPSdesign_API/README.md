@@ -70,7 +70,7 @@ def paintStart():
         ...
 ```
 
-**Note:** Currently, all data transmissions are processed using JSON format. MongoDB stores all information in JSON format, and PNG images are saved in the `../images` directory. Modifications can be made in the `./apps/designWeb/logic.py` file.
+**Note:** Currently, all data transmissions are processed using JSON format. MongoDB stores all information in JSON format, and PNG images are saved in the `../images` directory. To modify file paths, you can use the `./apps/designWeb/logic.py` file. Please ensure that the folder exists before saving the image.
 
 ### Large Model Integration
 
