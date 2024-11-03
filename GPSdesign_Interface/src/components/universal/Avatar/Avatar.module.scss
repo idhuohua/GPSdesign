@@ -1,0 +1,20 @@
+.layout {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  &-large {
+    border-radius: 16px;
+  }
+  &-default {
+    border-radius: 12px;
+  }
+  &-small {
+    border-radius: 12px;
+  }
+  &-mini {
+    border-radius: 8px;
+  }
+}

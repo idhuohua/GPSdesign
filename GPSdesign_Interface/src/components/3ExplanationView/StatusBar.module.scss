@@ -1,0 +1,36 @@
+.layout {
+  height: 32px;
+  width: 390px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  &-cursor {
+    cursor: pointer;
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    width: 6px;
+    height: 32px;
+    top: 0;
+  }
+}
+
+.bars {
+  &-wrapper {
+    z-index: 1;
+    height: 24px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 6px;
+    overflow-x: hidden;
+  }
+}
+
+
+.bar {
+  cursor: pointer;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+}

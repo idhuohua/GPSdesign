@@ -1,0 +1,17 @@
+.layout {
+  user-select: none;
+  height: 20px;
+  box-sizing: border-box;
+  padding: 0 10px;
+  border-radius: 4px;
+  background: $color-gray-bg;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.title {
+  font-weight: 400; // regular
+  font-size: 12px;
+  line-height: 20px;
+  color: $color-text-secondary;
+}

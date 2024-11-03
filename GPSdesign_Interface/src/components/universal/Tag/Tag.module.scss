@@ -1,0 +1,36 @@
+// Tag.module.scss
+.edit-tag {
+  margin-right: 8px;
+  margin-bottom: 1px;
+  padding: 6px;
+  background-color: #ffffff; // 自定义背景颜色
+  color: #555; // 自定义文本颜色
+  border-radius: 6px; // 圆角边框
+  font-size: medium;
+  &:hover {
+    opacity: 0.85; // 鼠标悬停时的不透明度
+  }
+  .ant-tag-close-icon {
+    color: #999; // 关闭图标颜色
+  }
+}
+
+.tag-input {
+  padding: 8px;
+  width:auto; // 宽度自适应内容
+  margin-right: 8px; // 与其他标签的间隔
+  vertical-align:text-bottom // 垂直对齐方式
+}
+
+.site-tag-plus {
+  padding: 6px;
+  background: #f3f3f3; // 背景颜色
+  border-color: #dcdcdc; // 边框颜色
+  color: #303030; // 文本颜色
+  border-style: dashed; // 边框样式
+  font-size: medium;
+
+  &:hover {
+    background: #e7e7e7; // 鼠标悬停时的背景颜色
+  }
+}

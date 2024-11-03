@@ -1,0 +1,253 @@
+.layout {
+  width: 396px;
+  display: flex;
+  flex-direction: column;
+}
+
+.legend {
+
+  &-wrapper {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &-left {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    &-text {
+      user-select: none;
+      font-weight: 400; // regular
+      font-size: 10px;
+      line-height: 20px;
+      font-family: "Plus Jakarta Sans";
+      color: $color-black;
+    }
+    &-rect1 {
+      width: 10px;
+      height: 7.08px;
+      border-radius: 2px;
+      background: $color-number-2;
+    }
+    &-rect2 {
+      width: 14px;
+      height: 9.92px;
+      border-radius: 2px;
+      background: $color-heat-map;
+    }
+    &-rect3 {
+      width: 20px;
+      height: 14.7px;
+      border-radius: 2px;
+      background: $color-number-6;
+    }
+  }
+
+  &-right {
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+    &-text {
+      user-select: none;
+      font-weight: 400; // regular
+      font-size: 10px;
+      line-height: 20px;
+      font-family: "Plus Jakarta Sans";
+      color: $color-black;
+    }
+    &-number {
+      user-select: none;
+      font-weight: 400; // regular
+      font-size: 12px;
+      line-height: 20px;
+      font-family: "Plus Jakarta Sans";
+      color: $color-black;
+    }
+  }
+}
+
+.content {
+  position: relative;
+  margin-top: 6px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.heat-map-legend {
+  position: absolute;
+  width: 38px;
+  height: 25px;
+  top: 216px;
+}
+
+.date-axios {
+  &-wrapper {
+    width: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+  }
+  &-text {
+    user-select: none;
+    @include text-10;
+    color: $color-text-secondary;
+  }
+}
+
+.hour-axios {
+  &-wrapper {
+    margin-top: 4px;
+    margin-left: 45.5px;
+    height: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 9.6px;
+  }
+  &-number {
+    user-select: none;
+    width: 20px;
+    line-height: 16px;
+    @include text-10;
+    color: $color-text-secondary;
+  }
+}
+
+.map-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 4px 0;
+  border: 1px solid #F0E9DF;
+  border-radius: 4px;
+  gap: 1px;
+}
+
+.map-row {
+  margin-left: 5.5px;
+  margin-right: 5.5px;
+  width: 356px;
+  height: 18px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+
+
+.heat-item {
+  &-layout {
+    width: 26px;
+    height: 18px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  &-value1 {
+    cursor: pointer;
+    width: 10px;
+    height: 7.08px;
+    border-radius: 2px;
+    background: $color-number-2;
+  }
+  &-value2 {
+    cursor: pointer;
+    width: 12px;
+    height: 8.5px;
+    border-radius: 2px;
+    background: $color-heat-map;
+    opacity: 0.6;
+  }
+  &-value3 {
+    cursor: pointer;
+    width: 14px;
+    height: 9px;
+    border-radius: 2px;
+    background: $color-heat-map;
+    opacity: 0.7;
+  }
+  &-value4 {
+    cursor: pointer;
+    width: 16px;
+    height: 10.5px;
+    border-radius: 2px;
+    background: $color-heat-map;
+    opacity: 0.8;
+  }
+  &-value56 {
+    cursor: pointer;
+    width: 18px;
+    height: 12px;
+    border-radius: 2px;
+    background: $color-heat-map;
+    opacity: 0.9;
+  }
+  &-value7 {
+    cursor: pointer;
+    width: 20px;
+    height: 13.2px;
+    border-radius: 2px;
+    background: $color-number-6;
+  }
+  &-value8 {
+    cursor: pointer;
+    width: 22px;
+    height: 14.3px;
+    border-radius: 2px;
+    background: #D3928C;
+  }
+  &-value910 {
+    cursor: pointer;
+    width: 24px;
+    height: 15.5px;
+    border-radius: 2px;
+    background: #D67A70;
+  }
+
+  &-popover {
+    &-content {
+      width: 80px;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    &-text {
+      user-select: none;
+      @include text-10;
+      color: $color-text-secondary;
+    }
+    &-value-info {
+      height: 12px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 12px;
+      &-circle {
+        width: 8px;
+        height: 8px;
+        border-radius: 8px;
+      }
+      &-text {
+        user-select: none;
+        @include text-10;
+        color: $color-text-secondary;
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "zh": {
+    "test": "测试",
+    "Operate guidebook": "画布操作指南",
+    "Left-Pressed": "鼠标左键",
+    "Translation": "平移",
+    "Scaling": "缩放",
+    "Mouse Wheel": "滚轮",
+    "Drag": "拖动",
+    "Selection": "框选"
+  },
+  "en": {
+    "test": "test",
+    "Operate guidebook": "Operate guidebook",
+    "Left-Pressed": "Left-Pressed",
+    "Translation": "Translation",
+    "Scaling": "Scaling",
+    "Mouse Wheel": "Mouse Wheel",
+    "Drag": "Drag",
+    "Selection": "Selection"
+  }
+}

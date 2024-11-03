@@ -1,0 +1,8 @@
+.text-layout {
+  width:calc(100%);
+  height: calc(100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}

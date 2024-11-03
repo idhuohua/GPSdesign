@@ -1,0 +1,100 @@
+.layout {
+  //width: 398px;
+  display: flex;
+  flex-direction: column;
+}
+
+.line1 {
+  display: flex;
+  flex-direction: row;
+  &-column1 {
+    width: 132px;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    background: #FAFAFA;
+    border-width: 1px 0px 1px 1px;
+    border-style: solid;
+    border-color: #EBE0CA;
+    border-radius: 4px 0px 0px 0px;
+  }
+  &-column2 {
+    width: 134px;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    background: #FAFAFA;
+    border-width: 1px 0px 1px 1px;
+    border-style: solid;
+    border-color: #EBE0CA;
+  }
+  &-column3 {
+    width: 132px;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    background: #FAFAFA;
+    border: 1px solid #EBE0CA;
+    border-radius: 0px 4px 0px 0px;
+  }
+}
+
+.line2 {
+  display: flex;
+  flex-direction: row;
+  &-column1 {
+    width: 132px;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border-width: 0px 0px 1px 1px;
+    border-style: solid;
+    border-color: #F0F0F0;
+    border-radius: 0px 0px 0px 4px;
+  }
+  &-column2 {
+    width: 134px;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border-width: 0px 0px 1px 1px;
+    border-style: solid;
+    border-color: #F0F0F0;
+  }
+  &-column3 {
+    width: 132px;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border-width: 0px 1px 1px 1px;
+    border-style: solid;
+    border-color: #F0F0F0;
+    border-radius: 0px 0px 4px 0px;
+  }
+}
+
+.table-text {
+  @include text-sm;
+  color: $color-black;
+}

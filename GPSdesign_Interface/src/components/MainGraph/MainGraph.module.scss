@@ -1,0 +1,49 @@
+
+.main-graph {
+  &-wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  &-layout {
+    z-index: 0;
+  }
+}
+
+.text {
+  width: 100%;
+  display: flex;
+  font-family: 'Pingfang SC';
+  font-weight: bold;
+  &-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 12px;
+    font-size: 14px;
+    letter-spacing: -0.1px;
+    color:#686777;
+    white-space:pre-wrap;
+  }
+  &-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 16px;
+    letter-spacing: -0.1px;
+    color:#222222;
+    font-weight: bolder;
+  }
+}
+
+.float-button {
+  &-1 {
+    z-index: 1;
+    border: none;
+  }
+  &-2 {
+    z-index: 1;
+    border: none;
+  }
+}

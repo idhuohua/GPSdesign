@@ -1,0 +1,53 @@
+
+.segmentedControl {
+  display: flex;
+  border-radius: 20px;
+  overflow: hidden; // 保持内部按钮的边框在父容器内
+
+  &.leftActive {
+    // 当左侧按钮激活时的父容器样式
+    background-color: #00DDD0;
+    border: 5px solid #00DDD0;
+  }
+
+  &.rightActive {
+    // 当右侧按钮激活时的父容器样式
+    background-color: #FFC9C9;
+    border: 5px solid #FFC9C9;
+  }
+}
+
+button {
+  flex: 1;
+  padding: 10px 40px;
+  border: none;
+  border-radius: 20px;
+  background-color: transparent;
+  cursor: pointer;
+  color: #858585;
+  transition: background-color 0.3s;
+  @include text-bold;
+  font-size: 16px;
+
+  &:focus {
+    outline:invert;
+  }
+
+  &:not(:last-child) {
+    border-right: none; // 分割线
+  }
+  &.inactiveRight {
+    color: #0C514D;
+
+  }
+  &.inactiveLeft {
+    color: #850000;
+
+  }
+
+}
+
+.active {
+  background-color: #ffffff; 
+  color: rgb(0, 0, 0);
+}
