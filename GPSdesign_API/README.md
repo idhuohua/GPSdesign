@@ -38,7 +38,9 @@ The project structure is as follows:
   - OpenAI GPT service configurations
   - Database settings
 
-The Stable Diffusion service is not used in GPSdesign.
+**Note:**
+1. The Stable Diffusion service is not used in GPSdesign.
+2. Add your API_KEY to the corresponding file of `./config.py`.
 
 ### Data Transfer
 
