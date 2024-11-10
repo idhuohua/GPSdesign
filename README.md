@@ -42,7 +42,7 @@ To install `GPSdesign`, follow these steps:
 7. Install dependencies of user interface:
 
    - Enter the `GPSdesign_Interface` directory
-   - Install dependencies using yarn:
+   - Install dependencies using npm:
 
      ```bash
      npm i --legacy-peer-deps
