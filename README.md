@@ -19,7 +19,7 @@ To install `GPSdesign`, follow these steps:
 2. Install dependencies of Python:
 
    - Enter the `GPSdesign_API` directory:
-   - Set up the environment and install dependencies using Conda:
+   - Set up the environment and install dependencies using Python 3:
 
      ```bash
      py -3 -m venv venv
