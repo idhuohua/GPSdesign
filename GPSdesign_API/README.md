@@ -84,13 +84,15 @@ The system currently integrates two large models: GPT-4 and DALL-E-3. The code f
 ## Quick start
 
 1. Set up the environment and install dependencies (if you already have an environment, you can directly install dependencies).
-   Run `py -3 -m venv venv` to do this. If the package body is missing, install it using the `pip insatll` command.
+   Run `py -3 -m venv venv` to do this.
 
 2. Switch to the installed `venv` environment by running `venv\Scripts\activate`.
 
-3. Ensure that all backend services are running properly and configured correctly, and that the services are accessible:
+3. If the package body is missing, install it using the `pip insatll` command.
+
+4. Ensure that all backend services are running properly and configured correctly, and that the services are accessible:
 
    - The OpenAI API service
    - The MongoDB database has been started.
 
-4. Start the project in the `venv` virtual environment with `python app.py`. The project will default to running on port `localhost:5000`, which can be modified in the `app.py` file.
+5. Start the project in the `venv` virtual environment with `python app.py`. The project will default to running on port `localhost:5000`, which can be modified in the `app.py` file.
